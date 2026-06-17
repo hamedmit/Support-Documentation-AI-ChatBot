@@ -115,4 +115,35 @@ All kinds of contributions are appreciated, including:
 If you find this project useful, consider starring the repository and sharing feedback through issues or discussions.
 
 Contributions, suggestions, and feature requests are always welcome.
+  ---
 
+## Example Queries
+
+You can ask the chatbot questions such as:
+
+- "How can I reset my account password?"
+- "Where can I find the user documentation?"
+- "How do I troubleshoot login issues?"
+- "What are the available support resources?"
+
+---
+
+## Troubleshooting
+
+### ModuleNotFoundError
+
+If you encounter missing package errors, make sure all dependencies are installed:
+
+```bash
+pip install -r requirements.txt
+```
+
+### FAISS or model loading issues
+
+Ensure the required models and indexing files are created by running the setup scripts in the correct order.
+
+### Application does not start
+
+Verify that Python is installed correctly and that you are running the scripts from the project root directory.
+
+```
