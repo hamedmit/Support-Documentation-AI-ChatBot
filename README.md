@@ -19,7 +19,7 @@ This project was originally developed in 2025 as part of an AI engineering proje
 ---
 
 ## Architecture
-
+```
 User Query
 ↓
 Semantic Search (FAISS)
@@ -29,7 +29,7 @@ Relevant Documents
 FLAN-T5
 ↓
 Generated Answer
-
+```
 ---
 
 ## Tech Stack
