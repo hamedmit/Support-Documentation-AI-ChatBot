@@ -1,51 +1,48 @@
-# Support Documentation AI Model (A ChatBot)
+# Support Documentation AI Chatbot
 
-## Overview
+> AI-powered support documentation chatbot using FLAN-T5, FAISS, and semantic search.
 
-This project aims to develop an AI-powered system to enhance user experience and accessibility to support documentation. By training a model on support website data, we enable users to efficiently retrieve relevant information via a chatbot interface. This approach improves engagement, reduces support overhead, and ensures seamless access to documentation for inactive users and merchants.
+This project was originally developed in 2025 as part of an AI engineering project focused on intelligent support-documentation retrieval and question answering.
 
-## Project Objectives
+---
 
-- **Automated Information Retrieval**: Develop a model that understands and retrieves relevant support documentation efficiently.
-- **Scalability & Adaptability**: Ensure the system can handle diverse content formats and grow with future data expansions.
-- **Enhanced User Interaction**: Implement a chatbot-based interface for seamless user queries.
+## Features
 
-## Methodology
+- Web scraping for support documentation
+- Text normalization and preprocessing
+- Semantic search using SentenceTransformers
+- FAISS-based vector indexing
+- FLAN-T5 answer generation
+- Interactive chatbot interface
+- Extensible architecture for new documentation sources
 
-### 1. Model Selection
+---
 
-We evaluated multiple models based on performance, scalability, and adaptability to support documentation. The final selection was **FLAN-T5 Large** due to:
+## Architecture
 
-- Strong **natural language understanding** capabilities.
-- Ability to **generate concise and relevant answers**.
-- Optimized performance for **question-answering tasks**.
+User Query
+↓
+Semantic Search (FAISS)
+↓
+Relevant Documents
+↓
+FLAN-T5
+↓
+Generated Answer
 
-Additionally, **SentenceTransformers (all-MiniLM-L6-v2)** was chosen for **semantic search and document embedding**, enabling efficient retrieval of relevant information.
+---
 
-### 2. Data Collection & Preprocessing
+## Tech Stack
 
-A **custom web scraper** was developed to extract structured content from the Support Website, ensuring comprehensive coverage of all relevant pages.
+- Python
+- FLAN-T5 Large
+- SentenceTransformers
+- FAISS
+- Tkinter
+- BeautifulSoup
+- Requests
 
-Data preprocessing steps included:
-
-- **Content Normalization**: Standardizing text formats, handling variations in structure and metadata.
-- **Embedding Indexing**: Using **FAISS** to store and search document vectors efficiently.
-
-### 3. Querying & Chatbot Integration
-
-The chatbot retrieves responses through a multi-step approach:
-
-1. **Semantic Search**: FAISS retrieves the most relevant documents based on user queries.
-2. **Answer Generation**: FLAN-T5 processes retrieved documents and formulates a response.
-3. **Interactive UI**: A **Tkinter-based chat interface** allows users to submit queries and receive responses dynamically.
-
-### 4. System Testing & Optimization
-
-Extensive testing was conducted to ensure:
-
-- **Model accuracy** in retrieving and generating correct answers.
-- **Scalability** for handling large datasets.
-- **User-friendly interaction** with the chatbot interface.
+---
 
 ## Project Structure
 
@@ -74,19 +71,27 @@ pip install -r requirements.txt
 
 To set up and run the project, follow these steps in order:
 
-1- Run the strong scraper to extract support documentation from the website.
+1- Run the strong scraper to extract support documentation from the website. (or ``` python src/Strong_scraper.py ```)
 
-2- Run the normalization processing to standardize and clean the extracted data.
+2- Run the normalization processing to standardize and clean the extracted data. (or ``` python src/Normalization_Processing.py ```)
 
-3- Run the FAISS indexing script to create the search index for efficient retrieval.
+3- Run the FAISS indexing script to create the search index for efficient retrieval. (or ``` python src/Faiss_Indexing.py ```)
 
-4- Finally, run the chatbot to interact with the processed support documentation.
+4- Finally, run the chatbot to interact with the processed support documentation. (or ``` python src/chatbot.py ```)
 
 Ensure all dependencies are installed before running the scripts.
 
+Roadmap
+ Improve chatbot UI
+ Add web-based frontend
+ Support additional documentation sources
+ Add evaluation metrics
+ Docker support
+
+
 ## Contributors
 
-- **Hamed Qazanfari** - Lead Developer & Researcher
+- **Hamed Qazanfari** - Researcher and AI Engineer
 
 ## Future Enhancements
 
