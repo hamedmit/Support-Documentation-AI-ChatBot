@@ -81,23 +81,38 @@ To set up and run the project, follow these steps in order:
 
 Ensure all dependencies are installed before running the scripts.
 
-Roadmap
- Improve chatbot UI
- Add web-based frontend
- Support additional documentation sources
- Add evaluation metrics
- Docker support
+## Roadmap
+
+- [ ] Improve chatbot UI
+- [ ] Add web-based frontend
+- [ ] Support additional documentation sources
+- [ ] Add evaluation metrics
+- [ ] Docker support
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+If you would like to improve the project, please check the open issues or create a new one describing your proposal.
+
+All kinds of contributions are appreciated, including:
+
+- Bug fixes
+- Documentation improvements
+- Frontend/UI enhancements
+- New features
+- Performance optimizations
 
 
-## Contributors
+## Author
 
-- **Hamed Qazanfari** - Researcher and AI Engineer
+**Hamed Qazanfari** - Researcher and AI Engineer
 
-## Future Enhancements
+## Support
 
-- Fine-tuning the model on custom support queries.
-- Improving UI/UX for a better chatbot experience.
-- Expanding document coverage with additional sources.
+If you find this project useful, consider starring the repository and sharing feedback through issues or discussions.
 
-This project provides a robust AI-driven approach to support documentation, improving user accessibility and efficiency in retrieving relevant information.
+Contributions, suggestions, and feature requests are always welcome.
 
